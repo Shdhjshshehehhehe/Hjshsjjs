@@ -2373,6 +2373,13 @@ end)
 
 
 
+	runcode(function()
+	local pearlware = {Enabled = false}
+    pearlware = GuiLibrary["ObjectsThatCanBeSaved"]["UtilityWindow"]["Api"].CreateOptionsButton({
+        Name = "SkyTP",
+        HoverText = "Temporarily Puts you in the skybox for atleast 5 seconds. Use with balloon for no anticheat. ",
+        Function = function(callback)
+            if callback then
 	--// services
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -2475,4 +2482,10 @@ local func = Workspace:WaitForChild("Camera").Viewmodel.ChildAdded:Connect(funct
     
     end
     
+end)
+
+                end)
+            end
+        end
+    })		
 end)
